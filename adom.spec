@@ -3,7 +3,7 @@ Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	1.0.0
-Release:	3
+Release:	4
 Epoch:		1
 License:	Postcardware
 Group:		Applications/Games
@@ -11,6 +11,7 @@ Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.adom.de/
+Requires:	applnk >= 1.5.13
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,7 +38,7 @@ u¿yciu du¿ej liczby poleceñ z klawiatury.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_prefix}/games,%{_scoredir},%{_sysconfdir},%{_applnkdir}/Games/Roguelike,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_prefix}/games,%{_scoredir},%{_sysconfdir},%{_applnkdir}/Games/RPG,%{_pixmapsdir}}
 
 install adom $RPM_BUILD_ROOT%{_prefix}/games
 touch $RPM_BUILD_ROOT%{_scoredir}/.HISCORE
@@ -46,7 +47,7 @@ cat > $RPM_BUILD_ROOT%{_sysconfdir}/adom_ds.cfg << EOF
 %{_scoredir}
 EOF
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Roguelike
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/RPG
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -59,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(664,root,games) %config(noreplace) %verify(not md5 size mtime) %{_scoredir}/.HISCORE
 %{_sysconfdir}/adom_ds.cfg
 
-%{_applnkdir}/Games/Roguelike/*
+%{_applnkdir}/Games/RPG/*
 %{_pixmapsdir}/*
 
 %doc adomfaq.txt manual.doc readme.1st
