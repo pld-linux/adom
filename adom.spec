@@ -1,10 +1,9 @@
 %define 	_ver	%(echo %{version} | tr -d .)
-
 Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	1.0.0
-Release:	2
+Release:	3
 Epoch:		1
 License:	postcardware
 Group:		Applications/Games
