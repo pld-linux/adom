@@ -5,7 +5,7 @@ Name:		adom
 Version:	1.0.0
 Release:	3
 Epoch:		1
-License:	postcardware
+License:	Postcardware
 Group:		Applications/Games
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
 Source1:	%{name}.desktop
