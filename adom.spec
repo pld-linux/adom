@@ -57,8 +57,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(2755,root,games) %{_prefix}/games/adom
 %attr(775,root,games) %dir %{_scoredir}
-%attr(664,root,games) %config(noreplace) %verify(not md5 size mtime) %{_scoredir}/.HISCORE
-%{_sysconfdir}/adom_ds.cfg
+%attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) %{_scoredir}/.HISCORE
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/adom_ds.cfg
 
 %{_desktopdir}/*
 %{_pixmapsdir}/*
