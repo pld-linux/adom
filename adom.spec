@@ -8,7 +8,7 @@ Group(pl):	Gry
 Copyright:	postcardware
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{version}-elf.tar.gz
 URL:		http://www.adom.de/
-ExcludeArch:	%{x86}
+ExclusiveArch:  %{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
