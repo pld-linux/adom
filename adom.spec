@@ -1,13 +1,16 @@
+%define 	_ver	%(echo %{version} | tr -d .)
+
 Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
-Version:	100
+Version:	1.0.0
 Release:	1
+Epoch:		1
 License:	postcardware
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
-Source0:	http://www.adom.de/adom/download/linux/%{name}-%{version}-elf.tar.gz
+Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
 URL:		http://www.adom.de/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
