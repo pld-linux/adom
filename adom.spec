@@ -1,8 +1,8 @@
 Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
-Version:	099g15
-Release:	3
+Version:	100
+Release:	1
 License:	postcardware
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
