@@ -2,7 +2,7 @@ Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	099g15
-Release:	1
+Release:	2
 Group:		Games
 Group(pl):	Gry
 Copyright:	postcardware
@@ -33,8 +33,8 @@ ilo¶ci poleceñ z klawiatury.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_prefix}/games
-install adom $RPM_BUILD_ROOT%{_prefix}/games
+install -d $RPM_BUILD_ROOT%{_bindir}
+install adom $RPM_BUILD_ROOT%{_bindir}
 
 gzip -9nf adomfaq.txt manual.doc readme.1st
 
@@ -43,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_prefix}/games/adom
+%attr(755,root,root) %{_bindir}/adom
 %doc *.gz
