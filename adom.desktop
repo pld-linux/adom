@@ -5,7 +5,7 @@ Comment[pl]=Uratuj świat przed siłami Chaosu
 Icon=adom.png
 # standard xterm is too small
 Exec=xterm -geometry 80x25 -e /usr/games/adom
-Terminal=0
+Terminal=false
 Type=Application
 Encoding=UTF-8
 # vi: encoding=utf-8
