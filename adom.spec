@@ -3,8 +3,9 @@ Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	099g15
 Release:	3
-Group:		Games
-Group(pl):	Gry
+Group:		Applications/Games
+Group(de):	Applikationen/Spiele
+Group(pl):	Aplikacje/Gry
 Copyright:	postcardware
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{version}-elf.tar.gz
 URL:		http://www.adom.de/
