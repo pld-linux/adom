@@ -8,6 +8,7 @@ Epoch:		1
 License:	Postcardware
 Group:		Applications/Games
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
+# Source0-md5:	801484ba7c7c03b3b999365bc45db053
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.adom.de/
