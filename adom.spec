@@ -15,7 +15,7 @@ URL:		http://www.adom.de/
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_scoredir	/var/games/adom
+%define		_scoredir	/var/games/adom
 
 %description
 ADOM stands for Ancient Domains of Mystery. ADOM is a so-called
