@@ -49,8 +49,6 @@ EOF
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Roguelike
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf adomfaq.txt manual.doc readme.1st
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -64,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_applnkdir}/Games/Roguelike/*
 %{_pixmapsdir}/*
 
-%doc *.gz
+%doc adomfaq.txt manual.doc readme.1st
