@@ -8,14 +8,6 @@ Release:	2
 Epoch:		1
 License:	postcardware
 Group:		Applications/Games
-Group(cs):	Aplikace/Hry
-Group(de):	Anwendungen/Spiele
-Group(es):	Aplicaciones/Juegos
-Group(fr):	Applications/Jeux
-Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•≤°º•‡
-Group(pl):	Aplikacje/Gry
-Group(pt):	AplicaÁıes/Jogos
-Group(ru):	“…Ãœ÷≈Œ…—/È«“Ÿ
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
