@@ -3,10 +3,10 @@ Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	099g15
 Release:	3
+License:	postcardware
 Group:		Applications/Games
 Group(de):	Applikationen/Spiele
 Group(pl):	Aplikacje/Gry
-Copyright:	postcardware
 Source0:	http://www.adom.de/adom/download/linux/%{name}-%{version}-elf.tar.gz
 URL:		http://www.adom.de/
 ExclusiveArch:	%{ix86}
@@ -26,12 +26,10 @@ rogue-podobna. To znaczy, ¿e jest to gra dla jednej osoby, która
 pozwala na wcielenie siê w postaæ poszukiwacza przygód przeszukuj±cego
 olbrzymie podziemia próbuj±c wype³niæ pewn± misjê. Grafika w grze jest
 oparta na prostym trybie tekstowym, a sama gra jest kontrolowana przy
-u¿yciu du¿ej ilo¶ci poleceñ z klawiatury.
+u¿yciu du¿ej liczby poleceñ z klawiatury.
 
 %prep
 %setup -q -n adom
-
-%build
 
 %install
 rm -rf $RPM_BUILD_ROOT
