@@ -1,0 +1,3 @@
+- release 3,
+- added "ExcludeArch: %%{ix86}",
+- spec adapterized.
