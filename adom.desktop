@@ -1,9 +1,10 @@
 [Desktop Entry]
 Name=adom
 Comment=Save the world from Chaos
-Comment[pl]=Uratuj ∂wiat przed si≥ami Chaosu
+Comment[pl]=Uratuj ≈õwiat przed si≈Çami Chaosu
 Icon=adom.png
 # standard xterm is too small
 Exec=xterm -geometry 80x25 -e /usr/games/adom
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
