@@ -2,8 +2,8 @@
 Summary:	Very popular rogue-like adventure game
 Summary(pl):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
-Version:	1.0.0
-Release:	4
+Version:	1.1.0
+Release:	1
 Epoch:		1
 License:	Postcardware
 Group:		Applications/Games
@@ -63,4 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_applnkdir}/Games/RPG/*
 %{_pixmapsdir}/*
 
-%doc adomfaq.txt manual.doc readme.1st
+%doc adomfaq.txt manual.doc readme.1st techstat.doc
