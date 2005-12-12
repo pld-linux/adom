@@ -34,7 +34,7 @@ oparta na prostym trybie tekstowym, a sama gra jest kontrolowana przy
 u¿yciu du¿ej liczby poleceñ z klawiatury.
 
 %prep
-%setup -q -n adom
+%setup -q -n %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
