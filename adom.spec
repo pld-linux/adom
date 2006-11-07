@@ -60,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) %{_scoredir}/.HISCORE
 %{_sysconfdir}/adom_ds.cfg
 
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/*
 
 %doc adomfaq.txt manual.doc readme.1st
