@@ -1,6 +1,6 @@
 %define 	_ver	%(echo %{version} | tr -d .)
 Summary:	Very popular rogue-like adventure game
-Summary(pl):	Bardzo popularna tekstowa gra przygodowa
+Summary(pl.UTF-8):   Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	1.1.1
 Release:	2
@@ -25,13 +25,13 @@ dungeon with some specific goal in mind. The graphics in the game are
 based on simple text characters and the game is controlled with a
 large number of keyboard commands.
 
-%description -l pl
-ADOM to skrót od "Ancient Domains of Mystery". ADOM to tak zwana gra
-rogue-podobna. To znaczy, ¿e jest to gra dla jednej osoby, która
-pozwala na wcielenie siê w postaæ poszukiwacza przygód przeszukuj±cego
-olbrzymie podziemia próbuj±c wype³niæ pewn± misjê. Grafika w grze jest
+%description -l pl.UTF-8
+ADOM to skrÃ³t od "Ancient Domains of Mystery". ADOM to tak zwana gra
+rogue-podobna. To znaczy, Å¼e jest to gra dla jednej osoby, ktÃ³ra
+pozwala na wcielenie siÄ™ w postaÄ‡ poszukiwacza przygÃ³d przeszukujÄ…cego
+olbrzymie podziemia prÃ³bujÄ…c wypeÅ‚niÄ‡ pewnÄ… misjÄ™. Grafika w grze jest
 oparta na prostym trybie tekstowym, a sama gra jest kontrolowana przy
-u¿yciu du¿ej liczby poleceñ z klawiatury.
+uÅ¼yciu duÅ¼ej liczby poleceÅ„ z klawiatury.
 
 %prep
 %setup -q -n %{name}
