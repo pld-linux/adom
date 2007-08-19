@@ -3,7 +3,7 @@ Summary:	Very popular rogue-like adventure game
 Summary(pl.UTF-8):	Bardzo popularna tekstowa gra przygodowa
 Name:		adom
 Version:	1.1.1
-Release:	2
+Release:	3
 Epoch:		1
 License:	Postcardware
 Group:		Applications/Games
@@ -38,9 +38,9 @@ użyciu dużej liczby poleceń z klawiatury.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_prefix}/games,%{_scoredir},%{_sysconfdir},%{_desktopdir},%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_scoredir},%{_sysconfdir},%{_desktopdir},%{_pixmapsdir}}
 
-install adom $RPM_BUILD_ROOT%{_prefix}/games
+install adom $RPM_BUILD_ROOT%{_bindir}
 touch $RPM_BUILD_ROOT%{_scoredir}/.HISCORE
 
 cat > $RPM_BUILD_ROOT%{_sysconfdir}/adom_ds.cfg << EOF
@@ -55,7 +55,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(2755,root,games) %{_prefix}/games/adom
+%attr(2755,root,games) %{_bindir}/adom
 %attr(775,root,games) %dir %{_scoredir}
 %attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) %{_scoredir}/.HISCORE
 %{_sysconfdir}/adom_ds.cfg
