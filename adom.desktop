@@ -2,11 +2,10 @@
 Name=adom
 Comment=Save the world from Chaos
 Comment[pl]=Uratuj świat przed siłami Chaosu
-Icon=adom.png
+Icon=adom
 # standard xterm is too small
 Exec=xterm -geometry 80x25 -e /usr/games/adom
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=ConsoleOnly;Game;RolePlaying;
 # vi: encoding=utf-8
