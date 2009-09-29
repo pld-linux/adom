@@ -12,6 +12,7 @@ Source0:	http://www.adom.de/adom/download/linux/%{name}-%{_ver}-elf.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.adom.de/
+Requires:	groups(games)
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
